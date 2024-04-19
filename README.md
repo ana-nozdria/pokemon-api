@@ -1,3 +1,6 @@
+**THE PROJECT WAS CREATED DURING MY STUDIES AT THE UNIVERSITY OF AUCKLAND**
+
+
 **Introduction**
 
 In this project, I completed the frontend and backend of a web application to display data about Pokemon. The web application's backend maintains its own list of Pokemon info in a JSON file, as well as enables users to import data about additional Pokemon from the PokeAPI RESTful API service.
