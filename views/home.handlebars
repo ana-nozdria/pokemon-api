@@ -1,0 +1,34 @@
+<script src="./js/client.js"></script>
+
+<div class="container">
+
+  <div class="section">
+    <h1>All Pokemon</h1>
+    {{!-- The button to add a new Pokemon --}}
+    <div id="add-new">
+      <input type="number" id="pokemonInput" name="newDex" placeholder="Pokedex number">
+      <button id="add-new-btn">Add New (from PokeAPI)</button>
+    </div>
+    <div class="sprite-container">
+      {{! TODO Display list of Pokemon here. }}
+      {{#each pokemon}}
+        <button data-dexNumber="{{this.dexNumber}}">
+            <img src="{{this.smallImageUrl}}"/>
+            <span>{{this.name}}</span>
+        </button>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="details">
+      <h1>Details</h1>
+      {{! TODO Display info about a single Pokemon here. }}
+      {{!-- I chose FLAREON as my fav Pokemon --}}
+      <img src="{{imageUrl}}" id="pokemonFullImg">
+      <h3>#<span id="dexNumber">{{dexNumber}}</span> <span id="name">{{selectedName}}</span></h3>
+      <p><strong>Types:</strong> <span id="type">{{types}}</span></p>
+      <p><strong>About <span id="name">{{selectedName}}</span>:</strong> <span id="about">{{dexEntry}}</span></p>
+    </div>
+  </div>
+</div>
